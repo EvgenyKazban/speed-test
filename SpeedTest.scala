@@ -3,7 +3,7 @@ import java.io.InputStream
 
 object SpeedTest {
     def main(args: Array[String]) = {
-        val is: InputStream = new URL("https://link.testfile.org/300MB").openStream()
+        val is: InputStream = new URL("https://raw.githubusercontent.com/EvgenyKazban/testfile/main/20MB-TESTFILE.ORG.pdf").openStream()
         val bs = Array.ofDim[Byte](1024)
         val ct = System.currentTimeMillis()
         var bytesRead = is.read(bs)
